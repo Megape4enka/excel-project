@@ -39,6 +39,7 @@
     "eslint-loader": "^4.0.2",
     "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.4.1",
+    "node-sass-tilde-importer": "^1.0.2",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
     "webpack": "^5.30.0",
@@ -46,6 +47,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1"
   }
 }
