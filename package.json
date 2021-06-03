@@ -1,5 +1,5 @@
 {
-  "name": "exel-project",
+  "name": "excel-project",
   "version": "1.0.0",
   "description": " Pure JavaScript Excel Application",
   "main": "webpack.config.js",
@@ -27,6 +27,7 @@
   "browserslist": "> 0.25%, not dead",
   "devDependencies": {
     "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.12",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
@@ -48,6 +49,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "form-data": "^4.0.0",
     "normalize.css": "^8.0.1"
   }
 }
