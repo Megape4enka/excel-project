@@ -13,7 +13,7 @@ export class Excel {
         this.components = this.components.map(Component => {
             const $el = $.create('div', Component.className)
             const component = new Component($el)
-            // DEBUG
+            // DEBUGg
             // if (component.name) {
             //     window['c' + component.name] = component
             // }
