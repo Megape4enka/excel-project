@@ -1,5 +1,5 @@
-export  class TableSelection {
-    static  className = 'selected'
+export class TableSelection {
+    static className = 'selected'
 
     constructor() {
         this.group = []
@@ -8,9 +8,9 @@ export  class TableSelection {
 
     select($el) {
         this.clear()
+        $el.focus().addClass(TableSelection.className)
         this.group.push($el)
         this.current = $el
-        $el.focus().addClass(TableSelection.className)
     }
 
     clear() {
@@ -18,10 +18,18 @@ export  class TableSelection {
         this.group = []
     }
 
+    get selectedIds() {
+        return this.group.map($el => $el.id())
+    }
+
     selectGroup($group = []) {
         this.clear()
 
         this.group = $group
         this.group.forEach($el => $el.addClass(TableSelection.className))
+    }
+
+    applyStyle(style) {
+        this.group.forEach($el => $el.css(style))
     }
 }
